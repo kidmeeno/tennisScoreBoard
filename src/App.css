@@ -41,12 +41,12 @@
 
 .homeScoreControler{
   position: absolute;
-    top: 54%;
+    top: 50%;
     left: 4%;
 }
 .awayScoreControler{
   position: absolute;
-    top: 54%;
+    top: 50%;
     right: 4%;
 }
 
@@ -66,6 +66,12 @@
 
 .scoreDisplaySection {
   text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .scoreBoard{
+    width: 80%;
+  }
 }
 
 @keyframes App-logo-spin {

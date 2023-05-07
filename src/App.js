@@ -52,12 +52,14 @@ function App() {
             <p className="score">{formatScoreDisplay(homeScore)}</p>
             <div className="homeScoreControler">
               <FaCaretUp
+                size={30}
                 onClick={() => {
                   handleHomeScore("increase");
                 }}
               />
               <br />
               <FaCaretDown
+                size={30}
                 onClick={() => {
                   handleHomeScore("decrease");
                 }}
@@ -73,12 +75,14 @@ function App() {
             <p className="score">{formatScoreDisplay(awayScore)}</p>
             <div className="awayScoreControler">
               <FaCaretUp
+                size={30}
                 onClick={() => {
                   handleAwayScore("increase");
                 }}
               />
               <br />
               <FaCaretDown
+                size={30}
                 onClick={() => {
                   handleAwayScore("decrease");
                 }}
