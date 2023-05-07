@@ -1,37 +1,78 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scoreBoard {
+  height: 60%;
+  width: 50%;
+  background: #36393B;
+  color: #FEFEFE;
+  border-radius: 10px;
+  border: 4px solid #9E9E9E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.score {
+  font-size: 136px;
+  font-weight: 800;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.playerName {
+  font-size: 30px;
+  margin: auto;
+}
+
+.winMessage{
+  position: absolute;
+  top: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #88ff88;
+}
+
+.homeScoreControler{
+  position: absolute;
+    top: 54%;
+    left: 4%;
+}
+.awayScoreControler{
+  position: absolute;
+    top: 54%;
+    right: 4%;
+}
+
+.scoreSection {
+  width: 40%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.competition {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scoreDisplaySection {
+  text-align: center;
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
